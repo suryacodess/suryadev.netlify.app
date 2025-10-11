@@ -1,0 +1,8 @@
+.surya {
+  display: flex;
+}
+@media (min-width: 1600px) {
+  .surya {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
