@@ -18,7 +18,19 @@ const Footer = () => {
     //   });
     // });
   }, []);
-
+  const linkedinIcon = new URL(
+    "../assets/icons/linkedin-icon.png",
+    import.meta.url
+  ).href;
+  const whatsappIcon = new URL(
+    "../assets/icons/whatsapp-icon.png",
+    import.meta.url
+  ).href;
+  const xIcon = new URL("../assets/icons/x-icon.png", import.meta.url).href;
+  const instaIcon = new URL(
+    "../assets/icons/instagram-icon.png",
+    import.meta.url
+  ).href;
   const rogue = new URL("../assets/images/rogue.svg", import.meta.url).href;
   return (
     <footer className="footer min-h-screen flex justify-center items-center w-full py-20 px-4">
@@ -45,7 +57,31 @@ const Footer = () => {
             </div>
           </div>
           <div className="bg-orange rounded-full py-4 text-center">
-            <h2 className="text-black text-[72px] lg:text-[122px] font-[900] poppins">Surya</h2>
+            <h2 className="text-black text-[72px] lg:text-[122px] font-[900] poppins">
+              Surya
+            </h2>
+          </div>
+          <div className="bg-purple-300 rounded-full flex items-center justify-between py-10 px-15">
+            <div className="">
+              <a href="https://x.com/heysuryaaaa" target="_blank">
+                <i className="fa-brands fa-x-twitter text-[42px] lg:text-[82px]"></i>
+              </a>
+            </div>
+            <div className="">
+              <a href="https://linkedin.com/in/suryaprakashsrigada" target="_blank">
+                <i className="fa-brands fa-linkedin text-[42px] lg:text-[82px]"></i>
+              </a>
+            </div>
+            <div className="">
+              <a href="mailto:suryaprakashsrigada@gmail.com">
+                <i className="fa-solid fa-envelope text-[42px] lg:text-[82px]"></i>
+              </a>
+            </div>
+            <div className="">
+              <a href="https://www.instagram.com/heysuryaaaa" target="_blank">
+                <i className="fa-brands fa-instagram text-[42px] lg:text-[82px]"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
