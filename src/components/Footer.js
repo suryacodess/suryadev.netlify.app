@@ -18,19 +18,6 @@ const Footer = () => {
     //   });
     // });
   }, []);
-  const linkedinIcon = new URL(
-    "../assets/icons/linkedin-icon.png",
-    import.meta.url
-  ).href;
-  const whatsappIcon = new URL(
-    "../assets/icons/whatsapp-icon.png",
-    import.meta.url
-  ).href;
-  const xIcon = new URL("../assets/icons/x-icon.png", import.meta.url).href;
-  const instaIcon = new URL(
-    "../assets/icons/instagram-icon.png",
-    import.meta.url
-  ).href;
   const rogue = new URL("../assets/images/rogue.svg", import.meta.url).href;
   return (
     <footer className="footer min-h-screen flex justify-center items-center w-full py-20 px-4">
