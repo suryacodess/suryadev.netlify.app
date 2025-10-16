@@ -19,6 +19,10 @@ const Footer = () => {
     // });
   }, []);
   const rogue = new URL("../assets/images/rogue.svg", import.meta.url).href;
+  const resume = new URL(
+    "../assets/SuryaPrakashSrigada_React_2_YOE.pdf",
+    import.meta.url
+  ).href;
   return (
     <footer className="footer min-h-screen flex justify-center items-center w-full py-20 px-4">
       <div className="footer-inner w-full">
@@ -33,14 +37,19 @@ const Footer = () => {
               className="w-full h-full absolute bottom-[-40px]"
             />
           </div>
-          <div className="bg-[#7A78FF] rounded-4xl aspect-square overflow-hidden border-2 border-black p-5">
-            <div className="max-w-full lg:max-w-[60%] poppins flex flex-col gap-[40px]">
+          <div className="bg-[#7A78FF] rounded-4xl aspect-square overflow-hidden border-2 border-black p-5 flex flex-col justify-between ">
+            <div className="max-w-full lg:max-w-[60%] poppins flex flex-col gap-[4px]">
               <h2 className="font-bold text-[70px] text-black  tracking-[-4px] leading-[100%]">
                 Let’s Connect
               </h2>
-              <p className="text-[14px] text-black leading-[100%]">
+              <p className="text-[14px] text-black leading-[100%] ps-1">
                 Feel free to reach out for collaborations or opportunities!
               </p>
+            </div>
+            <div className="w-full text-right">
+              <a href={resume} download className="text-[22px] lg:text-[42px] font-[900] text-black leading-[100%] poppins underline">
+                Download my resume
+              </a>
             </div>
           </div>
           <div className="bg-orange rounded-full py-4 text-center">
@@ -50,23 +59,32 @@ const Footer = () => {
           </div>
           <div className="bg-purple-300 rounded-full flex items-center justify-between py-10 px-15">
             <div className="">
-              <a href="https://x.com/heysuryaaaa" target="_blank">
-                <i className="fa-brands fa-x-twitter text-[42px] lg:text-[82px]"></i>
+              <a href="https://github.com/suryacodess" target="_blank">
+                <i className="fa-brands fa-github text-[42px] lg:text-[62px]"></i>
               </a>
             </div>
             <div className="">
-              <a href="https://linkedin.com/in/suryaprakashsrigada" target="_blank">
-                <i className="fa-brands fa-linkedin text-[42px] lg:text-[82px]"></i>
+              <a href="https://x.com/heysuryaaaa" target="_blank">
+                <i className="fa-brands fa-x-twitter text-[42px] lg:text-[62px]"></i>
               </a>
             </div>
+
             <div className="">
               <a href="mailto:suryaprakashsrigada@gmail.com">
-                <i className="fa-solid fa-envelope text-[42px] lg:text-[82px]"></i>
+                <i className="fa-solid fa-envelope text-[42px] lg:text-[62px]"></i>
               </a>
             </div>
             <div className="">
               <a href="https://www.instagram.com/heysuryaaaa" target="_blank">
-                <i className="fa-brands fa-instagram text-[42px] lg:text-[82px]"></i>
+                <i className="fa-brands fa-instagram text-[42px] lg:text-[62px]"></i>
+              </a>
+            </div>
+            <div className="">
+              <a
+                href="https://linkedin.com/in/suryaprakashsrigada"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin text-[42px] lg:text-[62px]"></i>
               </a>
             </div>
           </div>

@@ -60,10 +60,9 @@ const Projects = () => {
                 the entire frontend — from layout structure and responsive
                 design to smooth animations and performance optimization.
               </p>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38]">
-                <em>
-                  This project and all its assets belong to TechMojo Solutions.
-                </em>
+
+              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
+                Techstack - Astro.JS, Strapi, Bootstrap and Swiper.JS.
               </p>
             </div>
           </div>
@@ -94,6 +93,9 @@ const Projects = () => {
                 navigation, and interactive elements to make exploring events
                 and food options simple and engaging.
               </p>
+              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
+                Techstack - HTML 5, Tailwind CSS.
+              </p>
             </div>
           </div>
           <div className="project-list-item">
@@ -123,6 +125,9 @@ const Projects = () => {
                 navigation, and interactive elements to create an engaging user
                 experience.
               </p>
+              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
+                Techstack - HTML 5, Tailwind CSS.
+              </p>
             </div>
           </div>
           <div className="project-list-item">
@@ -151,6 +156,9 @@ const Projects = () => {
                 experience. I developed the frontend, ensuring a responsive
                 layout, easy navigation, and interactive elements to make
                 browsing products seamless and engaging.
+              </p>
+              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
+                Techstack - HTML 5, Tailwind CSS.
               </p>
             </div>
           </div>
