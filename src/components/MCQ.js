@@ -5,61 +5,6 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const MCQ = () => {
-  // useGSAP(() => {
-  //   const mm = gsap.matchMedia();
-  //   mm.add("(min-width:1024px)", () => {
-  //     let mcqTimeline = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: ".mcq",
-  //         markers: false,
-  //         start: "top 60%",
-  //         end: "bottom bottom",
-  //         scrub: 1,
-  //       },
-  //     });
-  //     const questions = gsap.utils.toArray([
-  //       ".mcq-question-1",
-  //       ".mcq-question-2",
-  //       ".mcq-question-3",
-  //       ".mcq-question-4",
-  //       ".mcq-question-5",
-  //       ".mcq-question-6",
-  //     ]);
-
-  //     mcqTimeline.fromTo(
-  //       questions,
-  //       {
-  //         autoAlpha: 0,
-  //         scale: 0.5,
-  //         transformOrigin: "left",
-  //       },
-  //       {
-  //         autoAlpha: 1,
-  //         scale: 1,
-  //         duration: 1,
-  //         stagger: 2,
-  //       }
-  //     );
-
-  //     mcqTimeline.fromTo(
-  //       ".mcq-list-item-bottom",
-  //       {
-  //         autoAlpha: 0,
-  //         scale: 0.5,
-  //         transformOrigin: "bottom right",
-  //       },
-  //       {
-  //         autoAlpha: 1,
-  //         scale: 1,
-  //         delay: 1,
-  //         stagger: 2,
-  //         duration: 1,
-  //       },
-  //       "<"
-  //     );
-  //   });
-  // });
-
   return (
     <section className="mcq bg-[#FF6D38] py-20 px-4">
       <div className="mcq-inner">
