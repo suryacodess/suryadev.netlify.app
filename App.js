@@ -42,7 +42,7 @@ const App = () => {
           <div className="max-w-[1200px] m-auto">
             <Footer />
           </div>
-          {/* <Surya /> */}
+          <Surya />
         </main>
       </div>
     </div>
