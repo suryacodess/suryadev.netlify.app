@@ -60,13 +60,13 @@ const MCQ = () => {
             {/* third question */}
             <div className="mqc-list-item-top flex items-start max-w-[80%] mb-4 lg:mb-8">
               <div className="mcq-question mcq-question-3 text-[14px] bg-black text-[#fdf9f0] font-[500] py-3 px-7 rounded-full poppins">
-                How much experience do you have in frontend development?
+                How much experience do you have in Frontend/UI development?
               </div>
             </div>
             <div className="mcq-list-item-bottom flex items-end justify-end w-full gap-2 mb-4 lg:mb-8">
               <div className="w-[10%]"></div>
               <div className="mcq-answer max-w-[80%] bg-[#FDF9F0] text-[#141414] font-[500] text-[14px] px-7 py-4 rounded-2xl rounded-br-[0px] border-[1px] border-black poppins">
-                I have 2 years of experience in frontend development.
+                I have 3+ years of experience in Frontend/UI development.
               </div>
               <div className="bg-[#FDF9F0] min-w-[40px] h-[40px] rounded-full inter font-extrabold flex justify-center items-center text-[12px]">
                 S
@@ -107,7 +107,7 @@ const MCQ = () => {
             <div className="mcq-list-item-bottom flex items-end justify-end w-full gap-2 mb-4 lg:mb-8">
               <div className="w-[10%]"></div>
               <div className="mcq-answer max-w-[80%] bg-[#FDF9F0] text-[#141414] font-[500] text-[14px] px-7 py-4 rounded-2xl rounded-br-[0px] border-[1px] border-black poppins">
-                I work primarily with JavaScript, React.js, Astro.js, Next.js,
+                I work primarily with Html, Css, JavaScript, React.js, Astro.js, Next.js,
                 and TypeScript, for building interactive and performant user
                 interfaces. For styling and design systems, I use Tailwind CSS,
                 and for content management, I prefer Strapi CMS due to its
