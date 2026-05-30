@@ -10,9 +10,9 @@ const HeroV2 = () => {
           </div>
           <div className="hero-content-headings">
             <h1 className="text-[52px] lg:text-[104px] tracking-[-2px] lg:tracking-[-5px] leading-[90%] text-black font-[900] text-center poppins selection:bg-[#ff6d38]">
-              <p>Interactive design</p>
-              <p>through code</p>
-              <p>and curiosity.</p>
+              <p>Quality assurance</p>
+              <p>through testing</p>
+              <p>and automation.</p>
             </h1>
           </div>
         </div>

@@ -1,15 +1,43 @@
+const projects = [
+  {
+    name: "Pragmatic Play",
+    url: "https://pragmaticplay.com",
+    period: "2023 – Present",
+    description:
+      "Performed functional and regression testing for the public-facing corporate website of Pragmatic Play, a global iGaming content provider covering product showcases, multilingual pages, and marketing sections. Validated WordPress CMS workflows, REST API responses, cross-browser compatibility, and WCAG accessibility compliance.",
+    stack: "Manual Testing · Playwright · REST API Testing · WordPress",
+    gradient: "from-[#1a1a2e] to-[#16213e]",
+  },
+  {
+    name: "Pragmatic Play Fun",
+    url: "https://pragmaticplay.fun",
+    period: "2023 – Present",
+    description:
+      "Performed end-to-end manual testing for a free-to-play community gaming platform validating game discovery flows, slot catalog filtering, and reward interactions. Validated Strapi CMS-driven content rendering and wrote Playwright automation scripts for tag-based filtering and navigation flows.",
+    stack: "Manual Testing · Playwright · Strapi CMS · REST APIs",
+    gradient: "from-[#2d1b69] to-[#11998e]",
+  },
+  {
+    name: "ARRISE",
+    url: "https://arrise.com",
+    period: "2023 – Present",
+    description:
+      "Executed functional and regression testing for the ARRISE corporate website validating careers portal listings, location pages, product showcases, and brand sections. Tested Strapi CMS workflows for dynamic job listings and validated REST API responses for real-time content accuracy.",
+    stack: "Manual Testing · Playwright · Strapi CMS · REST APIs",
+    gradient: "from-[#0f0c29] to-[#302b63]",
+  },
+  {
+    name: "Klira Skin",
+    url: "https://klira.skin",
+    period: "2025 – Present",
+    description:
+      "Performed end-to-end manual testing for a dermatology e-commerce platform covering the multi-step Skin Test quiz flow, product pages, shop, gift card, and checkout journeys. Wrote Playwright automation scripts for checkout and quiz flows, and verified WCAG accessibility across all customer-facing pages.",
+    stack: "Manual Testing · Playwright · Strapi CMS · REST APIs",
+    gradient: "from-[#ff6d38] to-[#f5576c]",
+  },
+];
+
 const Projects = () => {
-  const arrise = new URL("../assets/images/arrise.png", import.meta.url).href;
-  const chanAndChan = new URL("../assets/images/chan-chan.png", import.meta.url)
-    .href;
-  const duffle = new URL("../assets/images/duffle.png", import.meta.url).href;
-  const freelancers = new URL(
-    "../assets/images/freelancers.png",
-    import.meta.url
-  ).href;
-  const movies = new URL("../assets/images/movies.png", import.meta.url).href;
-  const oldagency = new URL("../assets/images/oldagency.png", import.meta.url)
-    .href;
   return (
     <section className="projects bg-black py-20 px-4" id="projects">
       <div className="projects-inner flex flex-col gap-20">
@@ -21,147 +49,51 @@ const Projects = () => {
           </div>
           <div className="projects-heading">
             <h2 className="text-center text-[62px] lg:text-[120px] font-extrabold text-white leading-[100%] tracking-[-4px] poppins selection:bg-[#ff6d38]">
-              <p> Building Stories</p> <p>With Code</p>
+              <p>Ensuring Quality</p> <p>Across Platforms</p>
             </h2>
           </div>
         </div>
 
         <div className="projects-list max-w-[1200px] m-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
-          <div className="project-list-item">
-            <div className="project-list-item-img">
-              <a href="https://arrise.com" target="_blank">
-                <img
-                  src={arrise}
-                  alt="Project"
-                  className="h-[auto] w-full object-cover rounded-2xl"
-                />
-              </a>
-            </div>
-            <div className="prject-list-item-body py-4">
-              <h3 className="text-white text-2xl font-bold poppins selection:bg-[#ff6d38]">
-                <a
-                  href="https://arrise.com"
-                  className="hover:text-[#ff6d38] transition-colors selection:bg-[#ff6d38]"
-                >
-                  Arrise
+          {projects.map((project) => (
+            <div className="project-list-item" key={project.url}>
+              <div className="project-list-item-img">
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  <div
+                    className={`h-[240px] lg:h-[300px] w-full rounded-2xl bg-gradient-to-br ${project.gradient} flex flex-col justify-center items-center gap-2 p-6`}
+                  >
+                    <span className="text-white/60 text-[14px] poppins font-medium">
+                      {project.period}
+                    </span>
+                    <span className="text-white text-[28px] lg:text-[36px] font-bold poppins text-center leading-tight">
+                      {project.name}
+                    </span>
+                    <span className="text-white/50 text-[13px] poppins">
+                      {project.url.replace("https://", "")}
+                    </span>
+                  </div>
                 </a>
-              </h3>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38]">
-                Arrise is a professional corporate website developed by me at
-                &nbsp;
-                <a
-                  href="https://techmojo.in"
-                  target="_blank"
-                  className="underline"
-                >
-                  TechMojo Solutions
-                </a>
-                , where I'm currently employed. I was responsible for building
-                the entire frontend — from layout structure and responsive
-                design to smooth animations and performance optimization.
-              </p>
-
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
-                Techstack - Astro.JS, Strapi, Bootstrap and Swiper.JS.
-              </p>
+              </div>
+              <div className="prject-list-item-body py-4">
+                <h3 className="text-white text-2xl font-bold poppins selection:bg-[#ff6d38]">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[#ff6d38] transition-colors selection:bg-[#ff6d38]"
+                  >
+                    {project.name}
+                  </a>
+                </h3>
+                <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38]">
+                  {project.description}
+                </p>
+                <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
+                  {project.stack}
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="project-list-item">
-            <div className="project-list-item-img">
-              <a href="http://chanandchan.netlify.app/" target="_blank">
-                <img
-                  src={chanAndChan}
-                  alt="Project"
-                  className="h-[auto] w-full object-cover rounded-2xl"
-                />
-              </a>
-            </div>
-            <div className="prject-list-item-body py-4">
-              <h3 className="text-white text-2xl font-bold poppins selection:bg-[#ff6d38]">
-                <a
-                  href="https://chanandchan.netlify.app"
-                  target="_blank"
-                  className="hover:text-[#ff6d38] transition-colors"
-                >
-                  Chan & Chan
-                </a>
-              </h3>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38]">
-                Chan & Chan is a single-page website for events and food,
-                designed to provide users with a smooth browsing experience. I
-                developed the frontend, focusing on responsive design, easy
-                navigation, and interactive elements to make exploring events
-                and food options simple and engaging.
-              </p>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
-                Techstack - HTML 5, Tailwind CSS.
-              </p>
-            </div>
-          </div>
-          <div className="project-list-item">
-            <div className="project-list-item-img">
-              <a href="https://oldagency.netlify.app/" target="_blank">
-                <img
-                  src={oldagency}
-                  alt="Project"
-                  className="h-[auto] w-full object-cover rounded-2xl"
-                />
-              </a>
-            </div>
-            <div className="prject-list-item-body py-4">
-              <h3 className="text-white text-2xl font-bold poppins selection:bg-[#ff6d38]">
-                <a
-                  href="https://oldagency.netlify.app/"
-                  target="_blank"
-                  className="hover:text-[#ff6d38] transition-colors"
-                >
-                  Old Agency
-                </a>
-              </h3>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38]">
-                Old Agency is a single-page landing website for an agency,
-                designed to showcase services and highlight key offerings. I
-                developed the frontend with a focus on responsive design, smooth
-                navigation, and interactive elements to create an engaging user
-                experience.
-              </p>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
-                Techstack - HTML 5, Tailwind CSS.
-              </p>
-            </div>
-          </div>
-          <div className="project-list-item">
-            <div className="project-list-item-img">
-              <a href="https://duffle.netlify.app" target="_blank">
-                <img
-                  src={duffle}
-                  alt="Project"
-                  className="h-[auto] w-full object-cover rounded-2xl"
-                />
-              </a>
-            </div>
-            <div className="prject-list-item-body py-4">
-              <h3 className="text-white text-2xl font-bold poppins selection:bg-[#ff6d38]">
-                <a
-                  href="https://duffle.netlify.app"
-                  target="_blank"
-                  className="hover:text-[#ff6d38] transition-colors"
-                >
-                  Duffle Ecommerce
-                </a>
-              </h3>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38]">
-                Duffle is an e-commerce website focused on duffle bags, designed
-                to provide users with a smooth and intuitive shopping
-                experience. I developed the frontend, ensuring a responsive
-                layout, easy navigation, and interactive elements to make
-                browsing products seamless and engaging.
-              </p>
-              <p className="text-white text-[14px] font-[400] poppins selection:bg-[#ff6d38] pt-2">
-                Techstack - HTML 5, Tailwind CSS.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

@@ -20,7 +20,7 @@ const Footer = () => {
   }, []);
   const rogue = new URL("../assets/images/rogue.svg", import.meta.url).href;
   const resume = new URL(
-    "../assets/SuryaSrigada.pdf",
+    "../assets/SuryaSrigada_QA_Resume.pdf",
     import.meta.url
   ).href;
   return (

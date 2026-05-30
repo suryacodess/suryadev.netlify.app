@@ -1,13 +1,11 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useEffect } from "react";
 import { ScrollTrigger, SplitText } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 import Tag from "./Tag";
 const About = () => {
   useGSAP(() => {
-    // Create a GSAP matchMedia instance
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 1024px)", () => {
@@ -66,13 +64,13 @@ const About = () => {
     <section className="about py-10 py-lg-0 h-auto lg:min-h-screen w-full flex justify-center items-center gap-[50px]">
       <div className="tags-left hidden lg:flex flex-col justify-center items-center gap-[50px] h-full">
         <div className="tag-1 relative">
-          <Tag icon={""} label="Design System" bg="bg-orange" />
+          <Tag icon={""} label="Playwright" bg="bg-orange" />
         </div>
         <div className="tag-2">
-          <Tag icon={""} label="Animation" bg="bg-purple" />
+          <Tag icon={""} label="Manual Testing" bg="bg-purple" />
         </div>
         <div className="tag-3">
-          <Tag icon={""} label="UI/UX" bg="bg-black" />
+          <Tag icon={""} label="API Testing" bg="bg-black" />
         </div>
       </div>
       <div className="about-inner flex flex-col gap-5 px-4">
@@ -86,22 +84,22 @@ const About = () => {
             className="text-[32px] lg:text-[40px] font-[400] leading-[1.4em] inter tracking-[-2px] selection:bg-[#ff6d38]"
             style={{ fontFeatureSettings: "salt" }}
           >
-            I’m a passionate frontend developer who enjoys crafting clean,
-            responsive, and user-friendly interfaces. My focus is on building
-            performant and accessible websites that not only function seamlessly
-            but also tell a story and create engaging experiences for users.
+            I&apos;m a QA Engineer with 3 years of experience in manual and
+            automation testing for iGaming, B2C, and e-commerce platforms. I
+            focus on thorough test coverage, sharp defect detection, and
+            ensuring every release meets the highest quality standards.
           </p>
         </div>
       </div>
       <div className="tags-right hidden lg:flex flex-col justify-center items-center gap-[50px] h-full">
         <div className="tag-4">
-          <Tag icon={""} label="Research" bg="bg-green" />
+          <Tag icon={""} label="Cross-Browser" bg="bg-green" />
         </div>
         <div className="tag-5">
-          <Tag icon={""} label="Development" bg="bg-blue" />
+          <Tag icon={""} label="CMS Testing" bg="bg-blue" />
         </div>
         <div className="tag-6">
-          <Tag icon={""} label="Mobile First" bg="bg-lime" color="text-black" />
+          <Tag icon={""} label="Agile/Scrum" bg="bg-lime" color="text-black" />
         </div>
       </div>
     </section>
